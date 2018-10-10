@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{user.username}}'s Page</h1>
+<p>This is your SHOW PAGE YAAAAAAAAY!</p>
+<p></p>
+<a href="{{url_for('user.edit', id=user.id)}}" class="btn btn-primary">Edit user info</a>
+
+{% endblock %}
